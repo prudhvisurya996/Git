@@ -1,0 +1,20 @@
+Create gmail account for github
+signin with created gmail account andget passcode
+create account
+create repository
+use https ssh or cli to clone it local system
+
+
+Local system
+open git bash 
+git config --global user.name "githubaccountname"
+git config --global user.email "gmailaccount"
+git clone https://github.com/prudhvisurya996/Git.git
+select the folder 
+
+
+now create token
+
+as per the document for pushing or pulling the code to or from remote repo respectively
+
+=================END===================================================================
