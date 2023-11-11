@@ -1,0 +1,32 @@
+Command mode;
+gg---Cursor will be at starting position of the file
+G---Cursor at ending line of the file
+:se nu---to set numbers 
+: se nonu---to remove numbers 
+:n---to move to certain line where n=1,2,3,
+:w--save
+:wq---save and exit=:x
+:q--quit without saving
+/pattern---used to serach fo pattern---press n for next for searching in next lines
+shift+$---end of the line
+y--copy--p--paste
+ny--copy n lines--n=1,2,3,4
+dd-delete a line
+dw --delete a word
+x--delete a letter
+ndd---delete n lines  n=1,2,3,4
+w--move word by word left to right
+b--move word by word right to left
+nb or nw---move right to left or left to right n number of words
+esc+u---undo
+esc+U---undo total line
+
+Insert mode
+
+i--Insert at cursor position
+I-Insert at beggining of the line
+ESC+ o--Insert in the next new line
+Esc + O---Insert in the previous new line
+Esc+A---Insert at the end of the line
+a---
+
