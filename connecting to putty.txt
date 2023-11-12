@@ -1,0 +1,25 @@
+Method 1:
+
+Directly use ppk file in putty
+SSH--Auth---credentials--browse the path of ppk file
+session give ip address and login
+
+Method-2
+
+convert pem file to ppk file using putty gen
+Import keypsir load and save private key in some path
+from here follow same procedure as in method1
+
+Method-3---------------Mostly used in real time
+
+Connect to server 
+switch to root user using sudo -i
+create a userid and password 
+
+Go to /etc/ssh/sshd_config 
+make Password authentication to yes
+restart ssh using "systemctl restart ssh" Command
+
+now open putty 
+give ip address --and click onlogin
+provide the userid and passowrd
