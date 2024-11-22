@@ -1,0 +1,334 @@
+/* Reset/normalize default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f9; /* Lighter background for a fresh, clean look */
+    margin: 0;
+    padding: 20px;
+    color: #333; /* Standard text color */
+}
+
+/* Page Border */
+.page-border {
+    border: 2px solid #4CAF50; /* Green border */
+    border-radius: 12px;
+    padding: 30px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Deeper shadow for a modern, floating effect */
+    transition: all 0.3s ease-in-out;
+    background-image: linear-gradient(145deg, #ffffff, #f4f4f4); /* Subtle gradient */
+}
+
+.page-border:hover {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+/* Syntax Highlighting for specific text */
+pre code span.doctype {
+    color: #ff8c00; /* Orange for DOCTYPE */
+}
+
+pre code span.html-tag {
+    color: #68a0b9; /* Teal for HTML tags */
+}
+
+pre code span.head {
+    color: #843fec; /* Light purple for <head> */
+}
+
+pre code span.body {
+    color: #f48c42; /* Warm orange for <body> */
+}
+
+pre code span.tag {
+    color: #00c9a7; /* Bright teal for tags like <title> */
+}
+
+pre code span.h1 {
+    color: #f5b800; /* Yellow for <h1> */
+}
+
+pre code span.text {
+    color: #f0f0f0; /* Soft white for normal text */
+}
+
+/* Inner Border */
+.inner-border h1 {
+    text-align: center;
+    font-size: 32px;
+    color: #3a3a3a; /* Slightly darker shade for header */
+    font-weight: 700; /* Bolder font for header */
+    margin-bottom: 25px;
+    text-transform: uppercase; /* Adds a bit of style to the heading */
+    letter-spacing: 1px; /* Slight spacing between letters */
+}
+
+/* Question Section */
+.que {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px;
+    background-color: #fafafa;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.05);
+    border-left: 6px solid #4CAF50;
+    transition: all 0.3s ease-in-out;
+}
+
+.que:hover {
+    box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.1); /* Shadow effect on hover */
+}
+
+.que p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    margin-right: 20px;
+    font-weight: 500;
+}
+
+/* Button Container */
+.btn {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+    justify-content: center; /* Center buttons on smaller screens */
+}
+
+/* Button Styling */
+.btn button {
+    height: 40px;
+    width: 140px;
+    background-color: #28a745;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 0 20px;
+    background-image: linear-gradient(145deg, #28a745, #218838); /* Gradient button */
+    transition: all 0.3s ease;
+    text-transform: uppercase; /* Make button text uppercase */
+    font-weight: 600;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    transform: translateY(0);
+}
+
+.btn button:hover {
+    background-color: #218838;
+    transform: translateY(-5px); /* Lift the button */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2); /* More prominent shadow */
+}
+
+.btn button:active {
+    background-color: #1e7e34;
+    transform: translateY(0);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15); /* Return shadow on click */
+}
+
+.btn button a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    line-height: 45px;
+}
+
+.btn button a:hover {
+    text-decoration: underline;
+}
+
+/* Hint Box */
+#hint {
+    background-color: #f0f8ff;
+    padding: 20px;
+    margin-top: 15px;
+    border-left: 6px solid #28a745;
+    display: none;
+    font-size: 15px;
+    color: #444;
+    border-radius: 6px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+    background-image: linear-gradient(145deg, #f0f8ff, #e9f2ff); /* Subtle gradient */
+}
+
+/* Code Block Styling */
+pre {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    overflow-x: auto;
+    margin-top: 20px;
+    font-size: 16px;
+    color: #333;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Horizontal Line */
+hr {
+    border: 1px solid #e0e0e0;
+    margin: 20px 0;
+    opacity: 0.5;
+}
+
+/* Marquee Styling */
+marquee {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    background-image: linear-gradient(145deg, #f4f4f4, #e9ecef);
+}
+
+/* Modal Content */
+.modal-content {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 60px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.modal-content .close {
+    color: #aaa;
+    font-size: 32px;
+    font-weight: bold;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    padding: 12px;
+    transition: color 0.3s ease;
+}
+
+.modal-content .close:hover,
+.modal-content .close:focus {
+    color: #333;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Button Container Styling */
+.btn-container {
+    display: flex;
+    justify-content: center;  /* Center buttons horizontally */
+    gap: 20px;  /* Space between buttons */
+    margin-top: 20px;  /* Space from the top */
+    flex-wrap: wrap;  /* Buttons wrap on small screens */
+}
+
+/* Button Styling */
+.btn-container button {
+    height: 40px;  /* Slightly increased height */
+    width: 140px;  /* Slightly increased width */
+    background-color: #28a745;  /* Green background */
+    color: white;  /* White text */
+    border: none;
+    border-radius: 12px;  /* More pronounced rounded corners */
+    font-size: 16px;  /* Slightly larger font size */
+    font-weight: 600;  /* Slightly bolder font */
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;  /* Smooth transition for all changes */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);  /* Light shadow effect */
+}
+
+/* Hover Effect */
+.btn-container button:hover {
+    background-color: #218838;  /* Darker green when hovered */
+    transform: translateY(-5px);  /* Slight lift-up effect */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);  /* Stronger shadow on hover */
+}
+
+/* Active (Click) Effect */
+.btn-container button:active {
+    background-color: #1e7e34;  /* Even darker green on click */
+    transform: translateY(0);  /* Return to normal position */
+}
+
+/* Button Focus Styling */
+.btn-container button:focus {
+    outline: none;  /* Remove the default focus outline */
+    box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.5);  /* Blue glow effect when focused */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1200px) {
+    .page-border {
+        padding: 20px;
+    }
+
+    .que p {
+        font-size: 16px;
+    }
+
+    .btn-container button {
+        width: 100px;  /* Slightly smaller buttons on medium screens */
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .page-border {
+        padding: 15px;
+    }
+
+    .que {
+        flex-direction: column;  /* Stack question items vertically on small screens */
+        align-items: flex-start;
+    }
+
+    .que p {
+        font-size: 14px;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .btn-container button {
+        width: 100%;  /* Make buttons full width on mobile */
+        font-size: 16px;
+    }
+
+    pre {
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .inner-border h1 {
+        font-size: 24px;
+    }
+
+    .btn-container button {
+        width: 100%;  /* Full width buttons on small screens */
+        font-size: 14px;
+        height: 50px; /* Increase button height */
+    }
+
+    .que p {
+        font-size: 13px;
+    }
+}
